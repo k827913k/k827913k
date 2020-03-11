@@ -1,0 +1,122 @@
+@charset "UTF-8";
+* {
+  scroll-behavior: smooth;
+}
+
+.all {
+  height: 500vh;
+  font-family: "微軟正黑體";
+}
+
+.all .header {
+  width: 100%;
+  background-color: #343A40;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 0 10px 0;
+}
+
+.all .header .navbar {
+  width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  font-weight: 600;
+}
+
+.all .header .navbar a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.all .header .navbar p {
+  margin-bottom: 0;
+}
+
+.all .main .banner-img {
+  width: 80%;
+  height: calc(100vh - 60px);
+  background-size: cover;
+  background-position: cover;
+}
+
+.all .main .title {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 auto 40px auto;
+}
+
+.all .main .about {
+  padding-top: 60px;
+}
+
+.all .main .about .about-title {
+  width: 1110px;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.all .main .about .about-content {
+  width: 1110px;
+  line-height: 50px;
+  margin: 0px auto;
+  font-size: 16px;
+}
+
+.all .main .space-01 {
+  width: 100%;
+  height: 26vh;
+  background-color: #343A40;
+  margin-top: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+}
+
+.all .main .space-01 .space-01-title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 100px;
+  color: #FFF;
+}
+
+.all .main .wait {
+  padding-top: 60px;
+  height: 100vh;
+}
+
+.all .main .find {
+  padding-top: 60px;
+  height: 100vh;
+  background-color: #343A40;
+  color: #FFF;
+}
+
+.all .main .faq {
+  padding-top: 60px;
+  height: 100vh;
+}
+
+.all .main .donate {
+  padding-top: 60px;
+  height: 100vh;
+}
+
+.all .main .blog {
+  padding-top: 60px;
+  height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */
