@@ -1,233 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-   html {
-        scroll-behavior: smooth;
-    } 
-    body{
-        margin: 0;
-        background-image: url(https://cdn.pixabay.com/photo/2015/11/07/11/20/forest-1031022_960_720.jpg);
-        background-size: cover;
-    }
-    .btn_01{
-        width: 150px;
-        height: 60px;
-        background-color: rgba(0, 0, 0, 0.5);
-        border: 2px solid gray;	
-        transition: 0.5s;
-    }
-    .btn_01:hover{	
-        background-color: rgba(255, 255, 255, 0.5); 
-        cursor: pointer;
-    }
-    .btn_02{
-        width: 60px;
-        height: 30px;
-        background-color: rgba(0, 0, 0, 0.2);
-        line-height: 50px;
-        text-align: center;
-        color:#FFF;
-        font-size: 14px;
-        font-family: "arial";
-        transition: 0.5s;
-    }
-    .btn_02:hover{
-        background-color: rgba(255, 255, 255, 0.5); 
-        cursor: pointer;
-    }
-    
-    #all{
-        width: 80%;
-        height: 100vh;
-        margin-left: auto;
-        margin-right: auto;
-    }
+        html {
+            scroll-behavior: smooth;
+        }
 
-    #main-A{
-        width:100%;
-        height: 100vh;
-    }
-    #backgroung_01{
-        width: 100%;
-        height:50vh;
-        background-image: url(https://cdn.pixabay.com/photo/2014/01/17/19/01/tree-247122_960_720.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        padding-top:50vh;
-        position: relative; 
-        min-width: 500px;
-        
-   }
-   #avata_01{
-        width:160px;
-        height: 160px;
-        background-color: lightgray;
-        background-image: url(https://i.pinimg.com/564x/3d/64/e6/3d64e67f2aae25f2657c8df93dd38bd4.jpg);
-        background-size: 100% 100%;
-        border-radius: 5em;
-        box-shadow: 5px 5px 10px;
-        float: left;
-        position: absolute;
-        top:15px;
-        left: 15%;
-        position: fixed;
-   }
-   #avata_01:hover{
-       opacity: 0.1;
-   }
-    #main-A_btn{
-        width:350px;
-        height: 50px;
-        background-color:rgba(255, 255, 255, 0);
-        float: left;
-        position: absolute;
-        top:60px;
-        right:15%;
-        position: fixed;
-    }
-    #main-A_btn_A{
-        width:100px;
-        height: 50px;
-        float: left;
-        margin-right:10px;
-    }
-    #main-A_btn_B{
-        width:100px;
-        height: 50px;
-        float: left;
-        margin-right:10px;
-    }
-    #main-A_btn_C{
-        width:100px;
-        height: 50px;
-        float: left;
-    }
+        body {
+            margin: 0;
+            background-image: url(https://cdn.pixabay.com/photo/2015/11/07/11/20/forest-1031022_960_720.jpg);
+            background-size: cover;
+        }
 
-    #matte_01{
-        width: 100%;
-        height: 50vh;
-        background-color:rgba(0, 0, 0, 0.3)
-   }
-    #button_01{
-        position:absolute;
-        left: calc(50% - 75px);
-        top:calc(75% - 30px);
-   }
-  
-   #main-B{
-        width:100%;
-        height: 100vh;
-    }
-    #backgroung_02{
-        width: 100%;
-        height: calc(100vh - 50vh);
-        background-image: url(https://cdn.pixabay.com/photo/2016/01/30/17/09/africa-1170030_960_720.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        padding-top:50vh;
-        position: relative; 
-   }
-    #matte_02{
-        width: 100%;
-        height: 50vh;
-        background-color:rgba(0, 0, 0, 0.5)
-   }
-    #button_02{
-        position:absolute;
-        left: calc(50% - 75px);
-        top:calc(75% - 30px);
-   }
+        .btn_01 {
+            width: 150px;
+            height: 60px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 2px solid gray;
+            transition: 0.5s;
+        }
 
-   #main-C{
-        width:100%;
-        height: 100vh;
-    }
-    #backgroung_03{
-        width: 100%;
-        height: calc(100vh - 50vh);
-        background-image: url(https://cdn.pixabay.com/photo/2014/03/05/21/12/desert-279862_960_720.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        padding-top:50vh;
-        position: relative; 
-   }
-    #matte_03{
-        width: 100%;
-        height: 50vh;
-        background-color:rgba(0, 0, 0, 0.7)
-   }
-    #button_03{
-        position:absolute;
-        left: calc(50% - 75px);
-        top:calc(75% - 30px);
-   }
+        .btn_01:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+        }
 
+        .btn_02 {
+            width: 60px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.5);
+            line-height: 50px;
+            text-align: center;
+            color: #FFF;
+            font-size: 14px;
+            font-family: "arial";
+            transition: 0.5s;
+        }
 
+        .btn_02:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #000;
+            cursor: pointer;
+        }
+
+        #all {
+            width: 80%;
+            height: 100vh;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #main-A {
+            width: 100%;
+            height: 100vh;
+        }
+
+        #backgroung_01 {
+            width: 100%;
+            height: 50vh;
+            background-image: url(https://cdn.pixabay.com/photo/2014/01/17/19/01/tree-247122_960_720.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            padding-top: 50vh;
+            position: relative;
+            min-width: 500px;
+
+        }
+
+        #avata_01 {
+            width: 160px;
+            height: 160px;
+            background-color: lightgray;
+            background-image: url(https://i.pinimg.com/564x/3d/64/e6/3d64e67f2aae25f2657c8df93dd38bd4.jpg);
+            background-size: 100% 100%;
+            border-radius: 5em;
+            box-shadow: 5px 5px 10px;
+            float: left;
+            position: absolute;
+            top: 15px;
+            left: 15%;
+            position: fixed;
+        }
+
+        #avata_01:hover {
+            opacity: 0.1;
+        }
+
+        #main-A_btn {
+            width: 350px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0);
+            float: left;
+            position: absolute;
+            top: 60px;
+            right: 15%;
+            position: fixed;
+        }
+
+        #main-A_btn_A {
+            width: 100px;
+            height: 50px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        #main-A_btn_B {
+            width: 100px;
+            height: 50px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        #main-A_btn_C {
+            width: 100px;
+            height: 50px;
+            float: left;
+        }
+
+        #matte_01 {
+            width: 100%;
+            height: 50vh;
+            background-color: rgba(0, 0, 0, 0.3)
+        }
+
+        #button_01 {
+            position: absolute;
+            left: calc(50% - 75px);
+            top: calc(75% - 30px);
+        }
+
+        #main-B {
+            width: 100%;
+            height: 100vh;
+        }
+
+        #backgroung_02 {
+            width: 100%;
+            height: calc(100vh - 50vh);
+            background-image: url(https://cdn.pixabay.com/photo/2016/01/30/17/09/africa-1170030_960_720.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            padding-top: 50vh;
+            position: relative;
+        }
+
+        #matte_02 {
+            width: 100%;
+            height: 50vh;
+            background-color: rgba(0, 0, 0, 0.5)
+        }
+
+        #button_02 {
+            position: absolute;
+            left: calc(50% - 75px);
+            top: calc(75% - 30px);
+        }
+
+        #main-C {
+            width: 100%;
+            height: 100vh;
+        }
+
+        #backgroung_03 {
+            width: 100%;
+            height: calc(100vh - 50vh);
+            background-image: url(https://cdn.pixabay.com/photo/2014/03/05/21/12/desert-279862_960_720.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            padding-top: 50vh;
+            position: relative;
+        }
+
+        #matte_03 {
+            width: 100%;
+            height: 50vh;
+            background-color: rgba(0, 0, 0, 0.7)
+        }
+
+        #button_03 {
+            position: absolute;
+            left: calc(50% - 75px);
+            top: calc(75% - 30px);
+        }
     </style>
 
 </head>
+
 <body>
     <div id="all">
         <div id="main-A">
-        <div id="backgroung_01">
-            <div id="matte_01">
-                <div id="button_01" class="btn_01"></div>
+            <div id="backgroung_01">
+                <div id="matte_01">
+                    <div id="button_01" class="btn_01"></div>
+                </div>
+                <div id="avata_01"></div>
             </div>
-        <div id="avata_01"></div>
         </div>
-        <div id="main-A_btn">   
-            <a href="#backgroung_01">
-            <div id="main-A_btn_A" class="btn_02"></div>
-            </a>
-            <a href="#backgroung_02">
-            <div id="main-A_btn_B" class="btn_02"></div>
-            </a>
-            <a href="#backgroung_03">
-            <div id="main-A_btn_C" class="btn_02"></div>
-            </a>
-        </div>
-        
+
         <div id="main-B">
             <div id="backgroung_02">
                 <div id="matte_02">
-                    <div id="button_02" class="btn_01" ></div>
-                <div id="avata_01"></div>
+                    <div id="button_02" class="btn_01"></div>
+                    <div id="avata_01"></div>
                 </div>
-                <div id="main-A_btn">
-                    <a href="#backgroung_01">
-                    <div id="main-A_btn_A" class="btn_02"></div>
-                    </a>
-                    <a href="#backgroung_02">
-                    <div id="main-A_btn_B" class="btn_02"></div>
-                    </a>
-                    <a href="#backgroung_03">
-                    <div id="main-A_btn_C" class="btn_02"></div>
-                    </a>
             </div>
+        </div>
+
         <div id="main-C">
             <div id="backgroung_03">
                 <div id="matte_03">
                     <div id="button_03" class="btn_01"></div>
-                <div id="avata_01"></div>
+                    <div id="avata_01"></div>
                 </div>
-                <div id="main-A_btn">   
+
+                <div id="main-A_btn">
                     <a href="#backgroung_01">
-                    <div id="main-A_btn_A" class="btn_02">Select A</div>
+                        <div id="main-A_btn_A" class="btn_02">Select A</div>
                     </a>
                     <a href="#backgroung_02">
-                    <div id="main-A_btn_B" class="btn_02">Select B</div>
+                        <div id="main-A_btn_B" class="btn_02">Select B</div>
                     </a>
                     <a href="#backgroung_03">
-                    <div id="main-A_btn_C" class="btn_02">Select C</div>
+                        <div id="main-A_btn_C" class="btn_02">Select C</div>
                     </a>
-                </div>        
+                </div>
+                
+            </div>
+        </div>
 
     </div>
-       
+
 </body>
+
 </html>
