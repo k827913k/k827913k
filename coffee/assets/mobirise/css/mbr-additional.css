@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+
+
+
+
+
+
+
+
+
+#slider-2 P {
+  color: #ffffff;
+  text-align: left;
+}
+#slider-2 H1 {
+  color: #eb6b56;
+  text-align: left;
+}
+#slider-2 DIV {
+  font-size: 32px;
+  text-align: left;
+  font-family: 'PT Serif', serif;
+}
+#msg-box4-i .mbr-header__text {
+  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+}
+#msg-box4-i .mbr-header__subtext {
+  color: #ffffff;
+}
+#msg-box4-i .mbr-article {
+  color: #ffffff;
+}
+#msg-box4-i .mbr-article P {
+  font-family: 'PT Serif', serif;
+}
+#msg-box3-l .mbr-header .mbr-header__text {
+  text-align: center;
+}
+#msg-box3-l .mbr-header .mbr-header__subtext {
+  text-align: center;
+}
+#msg-box3-l .mbr-article P {
+  font-family: 'PT Serif', serif;
+}
+#msg-box3-l .mbr-header .mbr-header__text DIV {
+  font-family: 'PT Serif', serif;
+}
+#content5-m .mbr-header .mbr-header__text {
+  text-align: center;
+  color: #fff;
+}
+#content5-m .mbr-header .mbr-header__subtext {
+  text-align: center;
+  color: #fff;
+}
+#content5-m .mbr-article {
+  color: #fff;
+}
+#content5-m .mbr-header .mbr-header__text DIV {
+  font-family: 'PT Serif', serif;
+}
+#content5-m .mbr-article P {
+  font-family: 'PT Serif', serif;
+}
+#testimonials1-n .mbr-section__header DIV {
+  font-family: 'PT Serif', serif;
+}
+#testimonials1-n .mbr-reviews__text P {
+  font-family: 'PT Serif', serif;
+}
+#testimonials1-n .mbr-reviews__author-name DIV {
+  font-family: 'PT Serif', serif;
+}
+#footer1-o P {
+  text-align: center;
+}
