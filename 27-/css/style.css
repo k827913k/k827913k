@@ -1,0 +1,165 @@
+@charset "UTF-8";
+body {
+  font-family: "微軟正黑體";
+}
+
+.all .header {
+  width: 100%;
+  background-color: #212529;
+  position: fixed;
+  z-index: 99;
+}
+
+.all .header .navbar {
+  width: 1140px;
+  height: 85px;
+  margin: 0 auto;
+  color: #E2E2E2;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+}
+
+@media screen and (max-width: 1150px) {
+  .all .header .navbar {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .all .header .navbar {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .all .header .navbar {
+    width: 450px;
+  }
+}
+
+.all .header .navbar .about {
+  cursor: pointer;
+}
+
+.all .header .navbar .wait {
+  cursor: pointer;
+}
+
+.all .header .navbar .find {
+  cursor: pointer;
+}
+
+.all .header .navbar .faq {
+  cursor: pointer;
+}
+
+.all .header .navbar .donate {
+  cursor: pointer;
+}
+
+.all .header .navbar .blog {
+  cursor: pointer;
+}
+
+.all .main .banner img {
+  width: 100%;
+  height: calc( 100vh - 85px);
+}
+
+.all .main .title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.all .main .about_info {
+  margin: 0 auto;
+}
+
+.all .main .about_info .about_title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.all .main .about_info .about_content {
+  font-size: 16px;
+}
+
+.all .main .space_01 {
+  width: 100%;
+  height: 250px;
+  background-color: rgba(33, 37, 41, 0.9);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 575px) {
+  .all .main .space_01 {
+    height: 600px;
+  }
+}
+
+.all .main .space_01 .space-01_title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 100px;
+  color: #FFF;
+}
+
+@media screen and (max-width: 575px) {
+  .all .main .space_01 .space-01_title {
+    line-height: 75px;
+  }
+}
+
+.all .main .wait_info {
+  height: 80vh;
+  background-color: grey;
+}
+
+.all .main .find_info {
+  height: 80vh;
+  background-color: lightgrey;
+}
+
+.all .main .faq_info {
+  height: 80vh;
+  background-color: grey;
+}
+
+.all .main .space_02 {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(33, 37, 41, 0.9);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.all .main .space_02 .space-02_title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 80px;
+  color: #FFF;
+}
+/*# sourceMappingURL=style.css.map */

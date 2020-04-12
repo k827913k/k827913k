@@ -1,0 +1,94 @@
+body
+    font-family: "微軟正黑體"
+.all
+    .header
+        width: 100%
+        background-color: #212529
+        position: fixed
+        z-index: 99
+        .navbar
+            width: 1140px
+            height: 85px
+            margin: 0 auto
+            color: #E2E2E2
+            font-weight: bold
+            font-size: 16px
+            position: relative
+            @media screen and ( max-width: 1150px )
+                width: 800px
+            @media screen and ( max-width: 810px )
+                width: 600px
+            @media screen and ( max-width: 600px )
+                width: 450px
+            .about
+                cursor: pointer
+            .wait
+                cursor: pointer
+            .find
+                cursor: pointer
+            .faq
+                cursor: pointer
+            .donate
+                cursor: pointer
+            .blog
+                cursor: pointer
+    .main
+        .banner
+            img
+                width: 100%
+                height: calc( 100vh - 85px )
+        .title
+            font-size: 36px
+            font-weight: 600
+            margin-bottom: 40px
+        .about_info
+            margin: 0 auto
+            .about_title
+                font-size: 18px
+                font-weight: 600
+            .about_content
+                font-size: 16px
+        .space_01
+            width: 100%
+            height: 250px
+            background-color: rgba(#212529,.9) 
+            box-sizing: border-box
+            @media screen and ( max-width: 575px )
+                height: 600px 
+            .space-01_title
+                width: 100%
+                display: flex
+                justify-content: center
+                justify-content: space-around
+                list-style-type: none
+                font-size: 28px
+                font-weight: 600
+                line-height: 100px
+                color: #FFF
+                @media screen and ( max-width: 575px )
+                    line-height: 75px
+        .wait_info
+            height: 80vh
+            background-color: grey
+        .find_info
+            height: 80vh
+            background-color: lightgrey
+        .faq_info
+            height: 80vh
+            background-color: grey
+        .space_02
+            width: 100%
+            height: 200px
+            background-color: rgba(#212529,.9) 
+            box-sizing: border-box
+            .space-02_title
+                width: 100%
+                display: flex
+                justify-content: center
+                justify-content: space-around
+                list-style-type: none
+                font-size: 28px
+                font-weight: 600
+                line-height: 80px
+                color: #FFF
+    .footer

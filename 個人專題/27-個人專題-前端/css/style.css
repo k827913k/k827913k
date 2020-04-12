@@ -37,7 +37,7 @@
 
 .all .main .banner-img {
   width: 80%;
-  height: calc(100vh - 60px);
+  height: calc(80vh - 60px);
   background-size: cover;
   background-position: cover;
 }
