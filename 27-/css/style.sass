@@ -22,16 +22,28 @@ body
                 width: 450px
             .about
                 cursor: pointer
+                &:hover
+                    color: #B39B74
             .wait
                 cursor: pointer
+                &:hover
+                    color: #B39B74
             .find
                 cursor: pointer
+                &:hover
+                    color: #B39B74
             .faq
                 cursor: pointer
+                &:hover
+                    color: #B39B74
             .donate
                 cursor: pointer
+                &:hover
+                    color: #B39B74
             .blog
                 cursor: pointer
+                &:hover
+                    color: #B39B74
     .main
         .banner
             img
@@ -40,14 +52,14 @@ body
         .title
             font-size: 36px
             font-weight: 600
-            margin-bottom: 40px
         .about_info
             margin: 0 auto
             .about_title
                 font-size: 18px
                 font-weight: 600
             .about_content
-                font-size: 16px
+                //font-size: 16px
+                font-size: 1rem
         .space_01
             width: 100%
             height: 250px
@@ -61,21 +73,23 @@ body
                 justify-content: center
                 justify-content: space-around
                 list-style-type: none
-                font-size: 28px
+                font-size: 24px
                 font-weight: 600
                 line-height: 100px
                 color: #FFF
+                @media screen and ( max-width: 715px )
+                    font-size: 18px
                 @media screen and ( max-width: 575px )
+                    font-size: 20px
                     line-height: 75px
         .wait_info
             height: 80vh
             background-color: grey
         .find_info
             height: 80vh
-            background-color: lightgrey
+            background-color: grey
         .faq_info
             height: 80vh
-            background-color: grey
         .space_02
             width: 100%
             height: 200px
@@ -87,8 +101,46 @@ body
                 justify-content: center
                 justify-content: space-around
                 list-style-type: none
-                font-size: 28px
+                font-size: 24px
                 font-weight: 600
                 line-height: 80px
                 color: #FFF
+                @media screen and ( max-width: 600px )
+                    font-size: 20px
+        .donate_info
+            font-family: "標楷體"
+            font-size: 16px
+            font-weight: 600
+            height: 10vh
+            margin-left: 20%
+            position: relative
+            &::before
+                content: ""
+                position: absolute
+                top: 4px
+                left: -15px
+                width: 8px
+                height: 15px
+                background-color: #212529
+            &::after
+                content: ""
+                position: absolute
+                top: 28px
+                left: -15px
+                width: 8px
+                height: 15px
+                background-color: #212529
+        .blog_info
+            height: 80vh
+            background-color: grey
     .footer
+        height: 85px
+        background-color: #212529
+        .footer_content
+            font-size: 16px
+            color: #FFF
+            box-sizing: border-box
+            padding-top: 10px
+            line-height: 30px
+            @media screen and ( max-width: 600px )
+                font-size: 12px

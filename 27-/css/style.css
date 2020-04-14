@@ -42,24 +42,48 @@ body {
   cursor: pointer;
 }
 
+.all .header .navbar .about:hover {
+  color: #B39B74;
+}
+
 .all .header .navbar .wait {
   cursor: pointer;
+}
+
+.all .header .navbar .wait:hover {
+  color: #B39B74;
 }
 
 .all .header .navbar .find {
   cursor: pointer;
 }
 
+.all .header .navbar .find:hover {
+  color: #B39B74;
+}
+
 .all .header .navbar .faq {
   cursor: pointer;
+}
+
+.all .header .navbar .faq:hover {
+  color: #B39B74;
 }
 
 .all .header .navbar .donate {
   cursor: pointer;
 }
 
+.all .header .navbar .donate:hover {
+  color: #B39B74;
+}
+
 .all .header .navbar .blog {
   cursor: pointer;
+}
+
+.all .header .navbar .blog:hover {
+  color: #B39B74;
 }
 
 .all .main .banner img {
@@ -70,7 +94,6 @@ body {
 .all .main .title {
   font-size: 36px;
   font-weight: 600;
-  margin-bottom: 40px;
 }
 
 .all .main .about_info {
@@ -83,7 +106,7 @@ body {
 }
 
 .all .main .about_info .about_content {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .all .main .space_01 {
@@ -111,14 +134,21 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style-type: none;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 100px;
   color: #FFF;
 }
 
+@media screen and (max-width: 715px) {
+  .all .main .space_01 .space-01_title {
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 575px) {
   .all .main .space_01 .space-01_title {
+    font-size: 20px;
     line-height: 75px;
   }
 }
@@ -130,12 +160,11 @@ body {
 
 .all .main .find_info {
   height: 80vh;
-  background-color: lightgrey;
+  background-color: grey;
 }
 
 .all .main .faq_info {
   height: 80vh;
-  background-color: grey;
 }
 
 .all .main .space_02 {
@@ -157,9 +186,69 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style-type: none;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 80px;
   color: #FFF;
+}
+
+@media screen and (max-width: 600px) {
+  .all .main .space_02 .space-02_title {
+    font-size: 20px;
+  }
+}
+
+.all .main .donate_info {
+  font-family: "標楷體";
+  font-size: 16px;
+  font-weight: 600;
+  height: 10vh;
+  margin-left: 20%;
+  position: relative;
+}
+
+.all .main .donate_info::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -15px;
+  width: 8px;
+  height: 15px;
+  background-color: #212529;
+}
+
+.all .main .donate_info::after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: -15px;
+  width: 8px;
+  height: 15px;
+  background-color: #212529;
+}
+
+.all .main .blog_info {
+  height: 80vh;
+  background-color: grey;
+}
+
+.all .footer {
+  height: 85px;
+  background-color: #212529;
+}
+
+.all .footer .footer_content {
+  font-size: 16px;
+  color: #FFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 10px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .all .footer .footer_content {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
