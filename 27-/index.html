@@ -9,7 +9,12 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Bootstrap -->
+
+    <!-- 特殊符號 -->
     <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+    <!-- 特殊符號 -->
+    
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="faq.css">
@@ -107,7 +112,18 @@
                 <div id="wait" class="title text-center py-5">
                     — 等家寶寶 —
                 </div>
-                <div class="wait_info"></div>
+                <div class="wait_info px-5">
+                    <div class="wait_main">
+                        <div class="wait_img col-12 col-sm-12 col-md-8 col-lg-8"></div>
+                        <div class="wait_content"></div>
+                        <div class="more_img d-flex justify-content-between my-3">
+                            <div class="more_img_box"></div>
+                            <div class="more_img_box"></div>
+                            <div class="more_img_box"></div>
+                        </div>
+                        <hr class="mt-4">
+                    </div>
+                </div>
 
             </section>
             <!-- 等家寶寶 -->
@@ -127,7 +143,7 @@
                 <div id="faq" class="title text-center py-5">
                     — 常見問題 —
                 </div>
-                <div class="faq_info col-12 col-sm-10 col-md-10 col-lg-8 mx-auto px-1">
+                <div class="faq_info col-12 col-sm-10 col-md-10 col-lg-8 mx-auto px-3 pb-5">
                     <div class="accordion">
                         <div class="accordion-item">
                             <a>遇到被遺棄的狗狗如何處置?</a>
@@ -158,8 +174,7 @@
                         <div class="accordion-item">
                             <a>無法再繼續照顧領養的貓狗怎麼辦?</a>
                             <div class="content">
-                                <p>萬一發生無法再繼續照顧貓狗情形，請務必一定要為貓狗尋找好的領養人，若真的找不到合適領養人可先歸還送養人或是歸還當初領養的動保團體/協會。無論如何請勿把貓狗遺棄或丟棄。遺棄至深山、荒郊野外將造成貓狗缺乏糧食飢餓、生病而死也可能因為意外喪失性命
-                                    ”這是非常不好的行為 我們嚴厲譴責” !</p>
+                                <p>萬一發生無法再繼續照顧貓狗情形，請務必一定要為貓狗尋找好的領養人，若真的找不到合適領養人可先歸還送養人或是歸還當初領養的動保團體/協會。無論如何請勿把貓狗遺棄或丟棄。遺棄至深山、荒郊野外將造成貓狗缺乏糧食飢餓、生病而死也可能因為意外喪失性命 ”這是非常不好的行為 我們嚴厲譴責 ” !</p>
                             </div>
                         </div>
                     </div>
@@ -187,10 +202,8 @@
                 <div class="donate_info">
                     受捐單位:社團法人台灣流浪動物救援協會<br>
                     請填寫捐款人基本資料(※為必填欄位)
-
-
                 </div>
-                <!-- --- -->
+                <!-- donate_form -->
                 <form action="#" class="donate_form col-11 col-sm-11 col-md-9 col-lg-8 p-4 mx-auto">
                     <div>
                         <label class="desc" id="title1" for="Field1">※捐款人姓名(公司名稱)：</label>
@@ -320,8 +333,7 @@
                         <input id="saveForm" name="saveForm" type="submit" value="確認送出" class="submit">
                     </div>
                 </form>
-                <!-- --- -->
-
+                <!-- donate_form -->
             </section>
             <!-- 愛心捐助 -->
 
@@ -333,9 +345,6 @@
                 <div class="blog_info">
 
                 </div>
-
-
-
             </section>
             <!-- 部落格 -->
 
@@ -362,7 +371,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
-
+    
+        <!-- faq -->
     <script>
         const items = document.querySelectorAll(".accordion a");
 
@@ -373,7 +383,7 @@
 
         items.forEach(item => item.addEventListener('click', toggleAccordion));
     </script>
-
+    <!-- faq -->
 
 </body>
 
