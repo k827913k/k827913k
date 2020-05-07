@@ -13,7 +13,6 @@ hr
             height: 85px
             margin: 0 auto
             color: #E2E2E2
-            font-weight: bold
             font-size: 16px
             position: relative
             @media screen and ( max-width: 1150px )
@@ -22,28 +21,9 @@ hr
                 width: 600px
             @media screen and ( max-width: 600px )
                 width: 450px
-            .about
-                cursor: pointer
-                &:hover
-                    color: #B39B74
-            .wait
-                cursor: pointer
-                &:hover
-                    color: #B39B74
-            .find
-                cursor: pointer
-                &:hover
-                    color: #B39B74
-            .faq
-                cursor: pointer
-                &:hover
-                    color: #B39B74
-            .donate
-                cursor: pointer
-                &:hover
-                    color: #B39B74
-            .blog
-                cursor: pointer
+            a
+                color: #E2E2E2
+                text-decoration: none
                 &:hover
                     color: #B39B74
     .main
@@ -55,18 +35,24 @@ hr
             font-size: 36px
             font-weight: 600
         .about_info
-            margin: 0 auto
+        .container
+            @media screen and ( max-width: 1110px )
+                width: 40rem 
+            @media screen and ( max-width: 768px )
+                width: 28rem
             .about_title
                 font-size: 18px
                 font-weight: 600
+                word-wrap: break-word
             .about_content
-                //font-size: 16px
-                font-size: 1rem
+                font-size: 16px
         .space_01
             width: 100%
             height: 250px
             background-color: rgba(#212529,.9) 
             box-sizing: border-box
+            &:hover
+                background-color: #000000
             @media screen and ( max-width: 575px )
                 height: 600px 
             .space-01_title
@@ -78,48 +64,53 @@ hr
                 font-size: 24px
                 font-weight: 600
                 line-height: 100px
-                color: #FFF
+                color: #FFF  
                 @media screen and ( max-width: 715px )
                     font-size: 18px
                 @media screen and ( max-width: 575px )
                     font-size: 20px
                     line-height: 75px
         .wait_info
-            height: 150vh
             .wait_main
-                height: calc(100vh - 20%)
                 background-color: #212529
                 margin: 0 auto
                 .wait_img
-                    height: 100%
                     background-color: lightgrey
-                    @media screen and ( max-width: 768px )
-                        height: 70%
-                    @media screen and ( max-width: 575px )
-                        height: 70%
                 .wait_content
-                    @media screen and ( max-width: 768px )
-                        height: 30%
-                    @media screen and ( max-width: 575px )
-                        height: 30%
-                .more_img
-                    .more_img_box
-                        width: 30%
-                        height: 30vh
-                        background-color: grey
-                        @media screen and ( max-width: 768px )
-                            height: 25vh
-                        @media screen and ( max-width: 575px )
-                            height: 20vh                    
+                    color: #fff
+            .more_img
+                .more_img_box
+                    width: 30%
+                    background-color: grey
+            .notice
+                color: #000
+            .container
+                @media screen and ( max-width: 1110px )
+                    width: 40rem 
+                @media screen and ( max-width: 768px )
+                    width: 24rem
+                .notice_title
+                    font-size: 24px
+                    font-weight: 700  
+                .notice_content
+                    font-size: 16px
+                    font-weight: 700
+               
+
         .find_info
-            height: 80vh
+            height: 100vh
             background-color: grey
-        .faq_info
+            .find_img
+                img
+                    height: 80vh
+        .faq_info  
         .space_02
             width: 100%
             height: 200px
             background-color: rgba(#212529,.9) 
             box-sizing: border-box
+            &:hover
+                background-color: #000000
             .space-02_title
                 width: 100%
                 display: flex

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img-switch .small-img a {
+            display: inline-block;
+        }
+
+        #img-switch img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="img-switch">
+        <div class="small-img">
+            <a href=""><img width="150" src="./img/花球.jpg"></a>
+            <a href=""><img width="150" src="./img/胖胖.jpg"></a>
+            <a href=""><img width="150" src="./img/熊寶.jpg"></a>
+        </div>
+        <div class="big-img"><img src="./img/花球.jpg"></div>
+    </div>
+
+    <script>
+        $(function () {
+            $('#img-switch .small-img a').mouseover(function (e) {
+                let $imgSrc = $(this).attr('href');
+                $('#img-switch .big-img img').attr('src', $imgSrc);
+                return false;
+            });
+        })
+    </script>
+</body>
+
+</html>
