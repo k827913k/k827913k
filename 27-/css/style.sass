@@ -1,13 +1,15 @@
+html
+    scroll-behavior: smooth
 body
-    font-family: "微軟正黑體"     
+    font-family: "微軟正黑體"
 hr
     border-top: 3px solid #333
 .all
     .header
         width: 100%
         background-color: #212529
-        position: fixed
-        z-index: 99
+        // position: fixed
+        // z-index: 99
         .navbar
             width: 1140px
             height: 85px
@@ -28,6 +30,7 @@ hr
                     color: #B39B74
     .main
         .banner
+            z-index: 2
             img
                 width: 100%
                 height: calc( 100vh - 85px )
@@ -40,6 +43,7 @@ hr
             font-weight: 600 
             color: #fff         
         .about_info
+            position: relative
         .container
             @media screen and ( max-width: 1110px )
                 width: 40rem 
@@ -51,117 +55,135 @@ hr
                 word-wrap: break-word
             .about_content
                 font-size: 16px
-        .space_01
-            width: 100%
-            height: 250px
-            background-color: rgba(#212529,.9) 
-            box-sizing: border-box
-            @media screen and ( max-width: 575px )
-                height: 600px 
-            .space-01_title
-                width: 100%
-                display: flex
-                justify-content: center
-                justify-content: space-around
-                list-style-type: none
-                font-size: 24px
-                font-weight: 600
-                line-height: 100px
-                color: #FFF  
-                @media screen and ( max-width: 715px )
-                    font-size: 18px
-                @media screen and ( max-width: 575px )
-                    font-size: 20px
-                    line-height: 75px
-        .wait_info
-            .wait_main
-                background-color: #212529
-                margin: 0 auto
-                .wait_img
-                .wait_content
-                    color: #fff
-                    line-height: 2
-            .more_img
-                img 
-                    width: 100%
-                    height: 100%
-                    opacity: .5
-                    transition: 0s
-                    &:hover
-                        opacity: 1
-                .more_img_box
-                    
-            .notice
-                color: #000
-            .container
-                @media screen and ( max-width: 1110px )
-                    width: 40rem 
-                @media screen and ( max-width: 768px )
-                    width: 24rem
-                .notice_title
-                    font-size: 24px
-                    font-weight: 700  
-                .notice_content
-                    font-size: 16px
-                    font-weight: 700
-        .find_BG
-            background-color: #343A40
-        .find_info
-            .find_img
-                &:hover
-                    opacity: .8
-            .find_content
-                color: #E8F4FF
-                line-height: 3
-            @media screen and ( max-width: 1110px )
-                font-size: 14px
+    a
+        text-decoration: none
+        color: #333
+        .top_btn
+            width: 50px
+            height: 50px
+            border: 3px solid #333
+            border-radius: 25px
+            font-size: 25px
+            font-weight: bold
+            line-height: 38px
+            position: fixed
+            top: 82%
+            right: 50px
+            z-index: 1
             @media screen and ( max-width: 991px )
-                font-size: 16px
-
-        .faq_info  
-        .space_02
+                display: none
+    .space_01
+        width: 100%
+        height: 250px
+        background-color: rgba(#212529,.9) 
+        box-sizing: border-box
+        @media screen and ( max-width: 575px )
+            height: 600px 
+        .space-01_title
             width: 100%
-            height: 200px
-            background-color: rgba(#212529,.9) 
-            box-sizing: border-box
-            .space-02_title
-                width: 100%
-                display: flex
-                justify-content: center
-                justify-content: space-around
-                list-style-type: none
-                font-size: 24px
-                font-weight: 600
-                line-height: 80px
-                color: #FFF
-                @media screen and ( max-width: 600px )
-                    font-size: 18px
-        .donate_info
-            font-family: "標楷體"
-            font-size: 16px
+            display: flex
+            justify-content: center
+            justify-content: space-around
+            list-style-type: none
+            font-size: 24px
             font-weight: 600
-            height: 10vh
-            margin-left: 20%
-            position: relative
-            &::before
-                content: ""
-                position: absolute
-                top: 4px
-                left: -15px
-                width: 8px
-                height: 15px
-                background-color: #212529
-            &::after
-                content: ""
-                position: absolute
-                top: 28px
-                left: -15px
-                width: 8px
-                height: 15px
-                background-color: #212529
-        .blog_info
-            height: 80vh
-            background-color: grey
+            line-height: 100px
+            color: #FFF  
+            @media screen and ( max-width: 715px )
+                font-size: 18px
+            @media screen and ( max-width: 575px )
+                font-size: 20px
+                line-height: 75px
+    .wait_info
+        .wait_main
+            background-color: #212529
+            margin: 0 auto
+            .wait_img
+            .wait_content
+                color: #fff
+                line-height: 2
+        .more_img
+            img 
+                width: 100%
+                height: 100%
+                opacity: .5
+                transition: 0s
+                &:hover
+                    opacity: 1
+            .more_img_box
+                    
+        .notice
+            color: #000
+        .container
+            @media screen and ( max-width: 1110px )
+                width: 40rem 
+            @media screen and ( max-width: 768px )
+                width: 24rem
+            .notice_title
+                font-size: 24px
+                font-weight: 700  
+            .notice_content
+                font-size: 16px
+                font-weight: 700
+    .find_BG
+        background-color: #343A40
+    .find_info
+        .find_img
+            img
+                height: 100%
+            &:hover
+                opacity: .8
+        .find_content
+            color: #E8F4FF
+            line-height: 3
+        @media screen and ( max-width: 1110px )
+            font-size: 14px
+        @media screen and ( max-width: 991px )
+            font-size: 16px
+        .faq_info  
+    .space_02
+        width: 100%
+        height: 200px
+        background-color: rgba(#212529,.9) 
+        box-sizing: border-box
+        .space-02_title
+            width: 100%
+            display: flex
+            justify-content: center
+            justify-content: space-around
+            list-style-type: none
+            font-size: 24px
+            font-weight: 600
+            line-height: 80px
+            color: #FFF
+            @media screen and ( max-width: 600px )
+                font-size: 18px
+    .donate_info
+        font-family: "標楷體"
+        font-size: 16px
+        font-weight: 600
+        height: 10vh
+        margin-left: 20%
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            top: 4px
+            left: -15px
+            width: 8px
+            height: 15px
+            background-color: #212529
+        &::after
+            content: ""
+            position: absolute
+            top: 28px
+            left: -15px
+            width: 8px
+            height: 15px
+            background-color: #212529
+    .blog_info
+        height: 80vh
+        background-color: grey
     .footer
         height: 85px
         background-color: #212529
