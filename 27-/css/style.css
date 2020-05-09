@@ -58,6 +58,13 @@ hr {
 .all .main .title {
   font-size: 36px;
   font-weight: 600;
+  color: #333;
+}
+
+.all .main .find_title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
 }
 
 @media screen and (max-width: 1110px) {
@@ -68,7 +75,7 @@ hr {
 
 @media screen and (max-width: 768px) {
   .all .main .container {
-    width: 28rem;
+    width: 30rem;
   }
 }
 
@@ -88,10 +95,6 @@ hr {
   background-color: rgba(33, 37, 41, 0.9);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.all .main .space_01:hover {
-  background-color: #000000;
 }
 
 @media screen and (max-width: 575px) {
@@ -174,13 +177,30 @@ hr {
   font-weight: 700;
 }
 
-.all .main .find_info {
-  height: 100vh;
-  background-color: grey;
+.all .main .find_BG {
+  background-color: #343A40;
 }
 
-.all .main .find_info .find_img img {
-  height: 80vh;
+.all .main .find_info .find_img {
+  background-image: url("./img/花球.jpg");
+  height: 400px;
+}
+
+.all .main .find_info .find_content {
+  color: #fff;
+  line-height: 3;
+}
+
+@media screen and (max-width: 1110px) {
+  .all .main .find_info {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .all .main .find_info {
+    font-size: 16px;
+  }
 }
 
 .all .main .space_02 {
@@ -189,10 +209,6 @@ hr {
   background-color: rgba(33, 37, 41, 0.9);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.all .main .space_02:hover {
-  background-color: #000000;
 }
 
 .all .main .space_02 .space-02_title {
@@ -270,5 +286,12 @@ hr {
   .all .footer .footer_content {
     font-size: 12px;
   }
+}
+
+.all .footer .footer_content img {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0;
 }
 /*# sourceMappingURL=style.css.map */

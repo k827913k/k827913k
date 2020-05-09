@@ -1,5 +1,5 @@
 body
-    font-family: "微軟正黑體"
+    font-family: "微軟正黑體"     
 hr
     border-top: 3px solid #333
 .all
@@ -33,13 +33,18 @@ hr
                 height: calc( 100vh - 85px )
         .title
             font-size: 36px
-            font-weight: 600
+            font-weight: 600 
+            color: #333 
+        .find_title
+            font-size: 36px
+            font-weight: 600 
+            color: #fff         
         .about_info
         .container
             @media screen and ( max-width: 1110px )
                 width: 40rem 
             @media screen and ( max-width: 768px )
-                width: 28rem
+                width: 30rem
             .about_title
                 font-size: 18px
                 font-weight: 600
@@ -51,8 +56,6 @@ hr
             height: 250px
             background-color: rgba(#212529,.9) 
             box-sizing: border-box
-            &:hover
-                background-color: #000000
             @media screen and ( max-width: 575px )
                 height: 600px 
             .space-01_title
@@ -95,22 +98,27 @@ hr
                 .notice_content
                     font-size: 16px
                     font-weight: 700
-               
-
+        .find_BG
+            background-color: #343A40
         .find_info
-            height: 100vh
-            background-color: grey
             .find_img
-                img
-                    height: 80vh
+                // background-color: gray
+                background-image: url("./img/花球.jpg")
+                height: 400px
+            .find_content
+                color: #fff
+                line-height: 3
+            @media screen and ( max-width: 1110px )
+                font-size: 14px
+            @media screen and ( max-width: 991px )
+                font-size: 16px
+
         .faq_info  
         .space_02
             width: 100%
             height: 200px
             background-color: rgba(#212529,.9) 
             box-sizing: border-box
-            &:hover
-                background-color: #000000
             .space-02_title
                 width: 100%
                 display: flex
@@ -160,3 +168,8 @@ hr
             line-height: 30px
             @media screen and ( max-width: 600px )
                 font-size: 12px
+            img
+                width: 60px
+                height: 60px
+                position: absolute
+                left: 0
