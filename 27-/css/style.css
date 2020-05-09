@@ -181,13 +181,12 @@ hr {
   background-color: #343A40;
 }
 
-.all .main .find_info .find_img {
-  background-image: url("./img/花球.jpg");
-  height: 400px;
+.all .main .find_info .find_img:hover {
+  opacity: .8;
 }
 
 .all .main .find_info .find_content {
-  color: #fff;
+  color: #E8F4FF;
   line-height: 3;
 }
 
@@ -230,7 +229,7 @@ hr {
 
 @media screen and (max-width: 600px) {
   .all .main .space_02 .space-02_title {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
