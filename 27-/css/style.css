@@ -58,7 +58,25 @@ hr {
 
 .all .main .banner img {
   width: 100%;
-  height: calc( 100vh - 85px);
+  height: calc(100vh - 85px);
+}
+
+@media (max-width: 1150px) {
+  .all .main .banner img {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 810px) {
+  .all .main .banner img {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .all .main .banner img {
+    height: 50vh;
+  }
 }
 
 .all .main .title {
@@ -100,30 +118,14 @@ hr {
   font-size: 16px;
 }
 
-.all .main .top_btn {
-  width: 50px;
-  height: 50px;
-  border: 3px solid #333;
-  border-radius: 25px;
-  font-size: 25px;
-  font-weight: bold;
-  line-height: 38px;
-  position: fixed;
-  top: 82%;
-  right: 50px;
-  z-index: 1;
-}
-
-@media screen and (max-width: 991px) {
-  .all .main .top_btn {
-    display: none;
-  }
-}
-
 .all .space_01 {
   width: 100%;
   height: 250px;
-  background-color: rgba(33, 37, 41, 0.9);
+  background-image: url("../img/space-01.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -131,6 +133,7 @@ hr {
 @media screen and (max-width: 575px) {
   .all .space_01 {
     height: 600px;
+    background-color: rgba(33, 37, 41, 0.9);
   }
 }
 
@@ -146,9 +149,9 @@ hr {
       justify-content: space-around;
   list-style-type: none;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: bold;
   line-height: 100px;
-  color: #FFF;
+  color: #fff;
 }
 
 @media screen and (max-width: 715px) {
@@ -244,9 +247,20 @@ hr {
 .all .space_02 {
   width: 100%;
   height: 200px;
-  background-color: rgba(33, 37, 41, 0.9);
+  background-image: url("../img/space-02.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 575px) {
+  .all .space_02 {
+    background-image: url("../img/space-01.jpg");
+  }
 }
 
 .all .space_02 .space-02_title {
@@ -263,12 +277,13 @@ hr {
   font-size: 24px;
   font-weight: 600;
   line-height: 80px;
-  color: #FFF;
+  color: #333;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 575px) {
   .all .space_02 .space-02_title {
     font-size: 18px;
+    color: #E2E2E2;
   }
 }
 
