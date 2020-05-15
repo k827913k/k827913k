@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<style>
+    body {
+       background-color: rgb(20, 20, 20); 
+    }
+
+    .parallax {
+        background-image: url('https://cdn.pixabay.com/photo/2015/03/04/20/25/cat-659426_960_720.jpg');
+        width: 100%;
+        height: 80vh;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .card_style{
+        transition: 0.5s;
+    }
+
+    .card_style:hover{
+        opacity: 0.9;
+        transition: 0.5s;
+    }
+
+    .footer-style {
+        width: calc(100% + 15px);
+    }
+
+    .font_style{
+        font-family:"微軟正黑體";
+        color: #FFF;
+    }
+
+    .font_style1{
+        font-family:"微軟正黑體";
+        color: gray;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row  ">
+            <div class="col-12 col-md-6 mt-5 order-2 order-md-1 ">
+                <img  src="https://i.pinimg.com/236x/5d/ed/d3/5dedd3d63e79a88383e4a190a9a9f3dc.jpg" width="370px"
+                    class="img-fluid  m-auto card_style" alt="Responsive image">
+            </div>
+            <div class="col-12 col-md-6 mt-5 order-1 order-md-2 ">
+                <a href="#" class="text-decoration-none font_style1">It starts with one thing
+                    I don't know why
+                    It doesn't even matter how hard you try
+                    Keep that in mind
+                    I designed this rhyme
+                    To explain in due time
+                    All I know
+                    Time is a valuable thing
+                    Watch it fly by as the pendulum swings
+                    Watch it count down to the end of the day
+                    The clock ticks life away
+                    It's so unreal
+                    Didn't look out below
+                    Watch the time go right out the window
+                    Trying to hold on, but you didn't even know
+                    Wasted it all just to watch you go
+                    I kept everything inside
+                    And even though I tried, it all fell apart
+                    What it meant to me
+                    Will eventually be a memory of a time when
+                    I tried so hard
+                    And got so far
+                    But in the end
+                    It doesn't even matter
+                    I had to fall
+                    To lose it all
+                    But in the end
+                    It doesn't even matter
+                    One thing, I don't know why
+                    It doesn't even matter how hard you try
+                    Keep that in mind
+                    I designed this rhyme
+                    To remind myself of a time when
+                    I tried so hard
+                    In spite of the way you were mocking me
+                    Acting like I was part of your property
+                    Remembering all the times you fought with me
+                    I'm surprised it got so
+                    Things aren't the way they were before
+                    You wouldn't even recognize me anymore
+                    Not that you knew me back then
+                    But it all comes back to me in the end
+                    You kept everything inside
+                    And even though I tried, it all fell apart
+                    What it meant to me will eventually be a memory of a time when
+                    I tried so hard
+                    And got so far
+                    But in the end
+                    It doesn't even matter
+                    I had to fall
+                    To lose it all
+                    But in the end
+                    It doesn't even matter
+                    I've put my trust in you
+                    Pushed as far as I can go
+                    For all this
+                    There's only one thing you should know
+                    I've put my trust in you
+                    Pushed as far as I can go
+                    For all this
+                    There's only one thing you should know
+                    I tried so hard
+                    And got so far
+                    But in the end
+                    It doesn't even matter
+                    I had to fall
+                    To lose it all
+                    But in the end
+                    It doesn't even matter</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="parallax d-flex justify-content-center align-items-center mt-5 mask">
+        <div class="container d-flex justify-content-center">
+            <button type="button" class="btn btn-secondary btn-lg d-none d-md-block">Hope</button>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm mt-5">
+                <div class="card m-auto " style="width: 18rem;">
+                    <img class="card_style" src="https://i.pinimg.com/564x/fd/fa/23/fdfa238240f210268a6686171288663b.jpg"
+                        class="card-img-top" alt="..." height="500px">
+                    <div class="card-body">
+                        <p class="card-text">When your mind breaks the spirit of your soul.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm mt-5">
+                <div class="card m-auto" style="width: 18rem;">
+                    <img class="card_style" src="https://i.pinimg.com/564x/08/6a/37/086a37798cddded6227c928e3620d6e2.jpg"
+                        class="card-img-top" alt="..." height="500px">
+                    <div class="card-body">
+                        <p class="card-text">Nothing's ever built to last, you're in ruins.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm mt-5">
+                <div class="card m-auto" style="width: 18rem;">
+                    <img class="card_style" src="https://i.pinimg.com/564x/02/54/64/025464e2527cfd69e7206336a0a30405.jpg"
+                        class="card-img-top" alt="..." height="500px">
+                    <div class="card-body">
+                        <p class="card-text">Like a liar looking for forgiveness from a stone.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="alert alert-dark mt-5 p-5 row justify-content-center footer-style bg-dark" role="alert">
+            <p class="font_style">此頁面內容僅為全端與python資料探工程師養成班使用</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
