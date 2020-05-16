@@ -1,6 +1,7 @@
 *{
     transition: .5s;
     overflow-x:hidden;  /* 隱藏超出x軸頁面的內容 */
+    font-family: "微軟正黑體","Arial";
 }
 body {
     height: 100vh;

@@ -1,6 +1,7 @@
 *{   
     transition: .5s;
-    overflow-x:hidden;
+    overflow-x:hidden;  /* 隱藏超出x軸頁面的內容 */
+    font-family: "微軟正黑體","Arial";
 }
 
 body {
@@ -65,25 +66,23 @@ body {
     font-weight: bold;
     color: #333;
 }
-.main{
-    height: 60vh;
-    margin-bottom: 110px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@media screen and (max-width:992px ){
+@media screen and (max-width: 992px){
     .main{
-        height: 100vh;
-        align-items: start;
+        margin-bottom: 110px;
     }
 }
-@media screen and (max-width:768px){
-    .main{
-        margin-bottom: 50px;
-    }
+.avatar>img{
+    width: 50%;
 }
-
+.about_name{
+    font-size: 30px;
+    color: #333;
+}
+.about_title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
 .footer {
     height: 72px;
     background-color: #2a2a2a;
