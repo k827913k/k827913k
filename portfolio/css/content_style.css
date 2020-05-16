@@ -3,9 +3,11 @@
     overflow-x:hidden;  /* 隱藏超出x軸頁面的內容 */
 }
 body {
+    height: 100vh;
     margin: 0;
     padding: 0;
     background-color: #e2e2e2;
+    position: relative;
 }
 .hbg{
     position: absolute;

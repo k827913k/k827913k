@@ -3,6 +3,7 @@
     overflow-x:hidden;  /* 隱藏超出x軸頁面的內容 */
 }
 body {
+    height: 100vh;
     margin: 0;
     padding: 0;
     background-color: #e2e2e2;
@@ -73,7 +74,7 @@ body {
 }
 .portfolio {
     background-color: #e2e2e2;
-    height: 200px;
+    /* height: 200px; */
     border: 1px solid;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
 }
