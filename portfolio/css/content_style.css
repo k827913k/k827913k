@@ -3,12 +3,14 @@
     overflow-x:hidden;  /* 隱藏超出x軸頁面的內容 */
     font-family: "微軟正黑體","Arial";
 }
+html{
+    position: relative;
+}
 body {
     height: 100vh;
     margin: 0;
     padding: 0;
     background-color: #e2e2e2;
-    position: relative;
 }
 .hbg{
     position: absolute;
@@ -17,6 +19,7 @@ body {
     font-size: 50px;
     cursor: pointer;
     display: none;
+    z-index: 1;
 }
 @media screen and (max-width: 768px){
     .hbg{
@@ -105,9 +108,8 @@ body {
 .footer {
     height: 72px;
     background-color: #2a2a2a;
-    position: fixed;
+    position: absolute;
     width: 100%;
-    z-index: 1;
     bottom: 24px;
 }
 .nav>a {
@@ -121,9 +123,8 @@ body {
 .copyright{
     color: #333;
     background-color: #e2e2e2;
-    position: fixed;
+    position: absolute;
     width: 100%;
-    z-index: 1;
     bottom: 0px;
 }
 @media screen and (max-width: 768px ){
