@@ -2,8 +2,7 @@
     transition: .5s;
     overflow-x:hidden;  /* 隱藏超出x軸頁面的內容 */
     font-family: "微軟正黑體","Arial";
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
+    /* -webkit-overflow-scrolling: touch; */
 }
 html{
     position: relative;
@@ -18,7 +17,6 @@ body {
     position: relative;
 }
 .hbg{
-    min-height:50px;
     position: fixed;
     top: 68px;
     right: 8%;
@@ -91,7 +89,7 @@ body {
     cursor: pointer;
 }
 .footer {
-    min-height: 72px;
+    height: 72px;
     background-color: #2a2a2a;
     position: absolute;
     width: 100%;
