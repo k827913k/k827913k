@@ -12,6 +12,9 @@ body {
     padding: 0;
     background-color: #e2e2e2;
 }
+.container{
+    position: relative;
+}
 .hbg{
     position: absolute;
     top: 65px;
