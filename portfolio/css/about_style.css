@@ -17,8 +17,8 @@ body {
     position: relative;
 }
 .hbg{
-    position: absolute;
-    top: -8px;
+    position: fixed;
+    top: 68px;
     right: 8%;
     font-size: 50px;
     cursor: pointer;
@@ -31,8 +31,8 @@ body {
     }
 }
 .hbg_ul{
-    position: absolute;
-    top: 43px;
+    position: fixed;
+    top: 148px;
     right: -100%;
     font-size: 36px;
     line-height:3;
@@ -44,7 +44,7 @@ body {
     transition-delay: 0.5s; /* 設定transition的延遲來讓選單不會馬上收回去 */
 }
 .hbg:hover~.hbg_ul {
-    position: absolute;
+    position: fixed;
     right: 0;
 }
 .hbg_ul:hover {
