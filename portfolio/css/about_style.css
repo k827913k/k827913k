@@ -68,9 +68,12 @@ body {
     font-weight: bold;
     color: #333;
 }
-@media screen and (max-width: 992px){
+.main{
+    margin-bottom: 110px;
+}
+@media screen and (max-width:768px){
     .main{
-        margin-bottom: 110px;
+        margin-bottom: 50px;
     }
 }
 .avatar>img{
