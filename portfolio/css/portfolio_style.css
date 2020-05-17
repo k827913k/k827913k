@@ -9,8 +9,7 @@ html{
     position: relative;
 }
 body {
-    min-height:100vh;
-    /* height: 100vh; */
+    height: 100vh;
     margin: 0;
     padding: 0;
     background-color: #e2e2e2;
@@ -19,6 +18,7 @@ body {
     position: relative;
 }
 .hbg{
+    min-height:50px;
     position: fixed;
     top: 68px;
     right: 8%;
@@ -91,7 +91,7 @@ body {
     cursor: pointer;
 }
 .footer {
-    height: 72px;
+    min-height: 72px;
     background-color: #2a2a2a;
     position: absolute;
     width: 100%;
