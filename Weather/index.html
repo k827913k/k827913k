@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="time"></div> -->
+    </div>
+    <div class="main">
+        <!-- <div class="weather_card">
+            <div class="weather_img">
+                <img src="./img/sun.png" alt="">
+            </div>
+            <div class="content">
+                <p class="county">台中市</p>
+                <p class="weather">晴天</p>
+                <p class="high">最高溫度:20C</p>
+                <p class="low">最低溫度:18C</p>
+                <p class="body">悶熱</p>
+            </div>
+        </div>
+
+        <div class="weather_card">
+            <div class="weather_img">
+                <img src="./img/cloud.png" alt="">
+            </div>
+            <p class="county">台中市</p>
+            <p class="weather">晴天</p>
+            <p class="high">最高溫度:20C</p>
+            <p class="low">最低溫度:18C</p>
+            <p class="body">悶熱</p>
+        </div>
+
+        <div class="weather_card">
+            <div class="weather_img">
+                <img src="./img/sun-rain.png" alt="">
+            </div>
+            <p class="county">台中市</p>
+            <p class="weather">晴天</p>
+            <p class="high">最高溫度:20C</p>
+            <p class="low">最低溫度:18C</p>
+            <p class="body">悶熱</p>
+        </div>
+
+        <div class="weather_card">
+            <div class="weather_img">
+                <img src="./img/rain.png" alt="">
+            </div>
+            <p class="county">台中市</p>
+            <p class="weather">晴天</p>
+            <p class="high">最高溫度:20C</p>
+            <p class="low">最低溫度:18C</p>
+            <p class="body">悶熱</p>
+        </div> -->
+
+    </div>
+
+    <script>
+
+        //將API資料經過驗證 確認請求有回應
+        fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-F581EA33-A9BD-4C08-AA6B-459703A451E5")
+            .then(function (response) {
+                return response.json();
+            })
+
+            .then(function (weather_array) {
+                // console.log(weather_array);
+
+                var locations = weather_array.records.location;
+                // console.log(locations);
+                locations.forEach(location => {
+                    var location_name = location.locationName;
+                    // console.log(location_name); //地區
+                    var Wx = location.weatherElement[0].time[0].parameter.parameterName;
+                    // console.log(Wx); //天氣現象
+                    var MaxT = location.weatherElement[4].time[0].parameter.parameterName;
+                    // console.log(MaxT); //最高溫度
+                    var MinT = location.weatherElement[2].time[0].parameter.parameterName;
+                    // console.log(MinT); //最低溫度
+                    var CI = location.weatherElement[3].time[0].parameter.parameterName;
+                    //console.log(CI); //舒適度
+                    var Wx_code = location.weatherElement[0].time[0].parameter.parameterValue;
+                    //console.log(Wx_code); //天氣代碼
+
+                    if (Wx_code == "1") {
+                        var weather_img = "./img/sun.png"
+
+                    } else if (Wx_code == "2" || Wx_code == "3" || Wx_code == "4" || Wx_code == "5" || Wx_code == "6") {
+                        var weather_img = "./img/cloud.png"
+
+                    } else if (Wx_code == "7") {
+                        var weather_img = "./img/sun-rain.jpg"
+
+                    } else if (Wx_code == "8" || Wx_code == "9" || Wx_code == "10" || Wx_code == "11" || Wx_code == "12" || Wx_code == "13" || Wx_code == "14") {
+                        var weather_img = "./img/rain.png"
+
+                    } else { var weather_img = "./img/rain.png" }
+
+                    var cards = document.querySelector(".main")
+                    cards.innerHTML += `
+
+                    <div class="weather_card">
+                        <div class="weather_img">
+                            <img src="${weather_img}" alt="">
+                        </div>
+                        <div class="content">
+                            <p class="county">${location_name}</p>
+                            <p class="weather">${Wx}</p>
+                            <p class="high">最高溫度：${MaxT}°C</p>
+                            <p class="low">最低溫度：${MinT}°C</p>
+                            <p class="body">舒適度：${CI}</p>
+                        </div>
+                    </div>
+
+                `
+
+                });
+            });
+
+        //JS內建時間
+        var today = new Date();
+        var current_day = today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日";
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+
+        h = checkTime(h);
+        m = checkTime(m);
+        s = checkTime(s);
+
+        //將時間利用innerHTML寫入div
+        var time = document.querySelector(".container")
+        time.innerHTML += `
+                    <div class="time">
+                    <h2>現在時間：${current_day + h + "時" + m + "分" + s + "秒"}</h2>
+                    </div>
+                `
+        //把個位數的時間前面加上0
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+
+    </script>
+
+</body>
+
+
+</html>
