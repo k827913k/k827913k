@@ -5,146 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, "微軟正黑體";
-            background-color: lightskyblue;
-        }
-
-        .all {
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            
-        }
-
-        .all1 {
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .container {
-            width: 300px;
-            height: 400px;
-            margin: 80px;
-            border: 2px solid;
-            background-color: darkgray;
-            box-sizing: border-box;
-            padding: 10px 25px 0 25px;
-            border-radius: 20px;
-            box-shadow: 5px 5px 10px #000000;
-        }
-
-        .content {
-            width: 250px;
-            height: 50%;
-            box-sizing: border-box;
-            padding-left: 15%;
-        }
-
-        .time {
-            color: navy;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-        }
-    </style>
-
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="all1">
-
-        <div class="time"></div>
-            
-        <div class="all">
-
-            <!-- <div class="container">
+    <div class="container">
+        <!-- <div class="time"></div> -->
+    </div>
+    <div class="main">
+        <!-- <div class="weather_card">
             <div class="weather_img">
-                <img src="./img/01.png" width="100%" height="200px" alt="">
+                <img src="./img/sun.png" alt="">
             </div>
             <div class="content">
-                <h2>台中市
-                </h2>
-                <h3>晴天</h3>
-                <div>
-                    <span>最高溫度:20C</span>
-                    <span>最低溫度:18C</span>
-                </div>
-                <div>悶熱</div>
+                <p class="county">台中市</p>
+                <p class="weather">晴天</p>
+                <p class="high">最高溫度:20C</p>
+                <p class="low">最低溫度:18C</p>
+                <p class="body">悶熱</p>
             </div>
         </div>
 
-        <div class="container">
+        <div class="weather_card">
             <div class="weather_img">
-                <img src="./img/02.png" width="100%" height="200px" alt="">
+                <img src="./img/cloud.png" alt="">
             </div>
-            <div class="content">
-                <h2>台中市
-                </h2>
-                <h3>多雲時晴</h3>
-                <div>
-                    <span>最高溫度:20C</span>
-                    <span>最低溫度:15C</span>
-                </div>
-                <div>舒適</div>
-            </div>
+            <p class="county">台中市</p>
+            <p class="weather">晴天</p>
+            <p class="high">最高溫度:20C</p>
+            <p class="low">最低溫度:18C</p>
+            <p class="body">悶熱</p>
         </div>
 
-        <div class="container">
+        <div class="weather_card">
             <div class="weather_img">
-                <img src="./img/03.jpg" width="100%" height="200px" alt="">
+                <img src="./img/sun-rain.png" alt="">
             </div>
-            <div class="content">
-                <h2>台中市
-                </h2>
-                <h3>陰天</h3>
-                <div>
-                    <span>最高溫度:20C</span>
-                    <span>最低溫度:12C</span>
-                </div>
-                <div>稍有寒意</div>
-            </div>
+            <p class="county">台中市</p>
+            <p class="weather">晴天</p>
+            <p class="high">最高溫度:20C</p>
+            <p class="low">最低溫度:18C</p>
+            <p class="body">悶熱</p>
         </div>
 
-        <div class="container">
+        <div class="weather_card">
             <div class="weather_img">
-                <img src="./img/04.png" width="100%" height="200px" alt="">
+                <img src="./img/rain.png" alt="">
             </div>
-            <div class="content">
-                <h2>台中市
-                </h2>
-                <h3>雨天</h3>
-                <div>
-                    <span>最高溫度:20C</span>
-                    <span>最低溫度:9C</span>
-                </div>
-                <div>寒冷</div>
-            </div>
+            <p class="county">台中市</p>
+            <p class="weather">晴天</p>
+            <p class="high">最高溫度:20C</p>
+            <p class="low">最低溫度:18C</p>
+            <p class="body">悶熱</p>
         </div> -->
-
-
-        </div>
-
-
 
     </div>
 
-
-
-
     <script>
 
+        //將API資料經過驗證 確認請求有回應
         fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-F581EA33-A9BD-4C08-AA6B-459703A451E5")
             .then(function (response) {
                 return response.json();
             })
-            //將API資料經過驗證 確認請求有回應
 
             .then(function (weather_array) {
-                console.log(weather_array);
+                // console.log(weather_array);
 
                 var locations = weather_array.records.location;
                 // console.log(locations);
@@ -163,55 +89,65 @@
                     //console.log(Wx_code); //天氣代碼
 
                     if (Wx_code == "1") {
-                        var weather_img = "./img/01.png"
+                        var weather_img = "./img/sun.png"
 
                     } else if (Wx_code == "2" || Wx_code == "3" || Wx_code == "4" || Wx_code == "5" || Wx_code == "6") {
-                        var weather_img = "./img/02.png"
+                        var weather_img = "./img/cloud.png"
 
                     } else if (Wx_code == "7") {
-                        var weather_img = "./img/03.jpg"
+                        var weather_img = "./img/sun-rain.jpg"
 
                     } else if (Wx_code == "8" || Wx_code == "9" || Wx_code == "10" || Wx_code == "11" || Wx_code == "12" || Wx_code == "13" || Wx_code == "14") {
-                        var weather_img = "./img/04.png"
+                        var weather_img = "./img/rain.png"
 
-                    }
-                    var cards = document.querySelector(".all")
+                    } else { var weather_img = "./img/rain.png" }
+
+                    var cards = document.querySelector(".main")
                     cards.innerHTML += `
 
-                    <div class="container">
+                    <div class="weather_card">
                         <div class="weather_img">
-                            <img src="${weather_img}" width="100%" height="200px" alt="">
+                            <img src="${weather_img}" alt="">
                         </div>
                         <div class="content">
-                            <h2>${location_name}</h2>
-                            <h3>${Wx}</h3>
-                            <div>
-                                <span>最高溫度:${MaxT}</span>
-                                <span>最低溫度:${MinT}</span>
-                            </div>
-                            <div>${CI}</div>
+                            <p class="county">${location_name}</p>
+                            <p class="weather">${Wx}</p>
+                            <p class="high">最高溫度：${MaxT}°C</p>
+                            <p class="low">最低溫度：${MinT}°C</p>
+                            <p class="body">舒適度：${CI}</p>
                         </div>
                     </div>
 
                 `
+
                 });
             });
 
+        //JS內建時間
         var today = new Date();
         var current_day = today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日";
-        var current_time = today.getHours() + ":" + today.getMinutes();
-        // console.log(current_day)
-        // console.log(current_time)
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
 
-        var cards = document.querySelector(".all1")
-        cards.innerHTML += `
+        h = checkTime(h);
+        m = checkTime(m);
+        s = checkTime(s);
 
+        //將時間利用innerHTML寫入div
+        var time = document.querySelector(".container")
+        time.innerHTML += `
                     <div class="time">
-                    <h2>現在時間：${current_day + current_time}</h2>
+                    <h2>現在時間：${current_day + h + "時" + m + "分" + s + "秒"}</h2>
                     </div>
-
                 `
-
+        //把個位數的時間前面加上0
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
 
     </script>
 
