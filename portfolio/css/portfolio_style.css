@@ -1,7 +1,8 @@
 *{
     transition: .5s;
-    overflow-x:hidden;  /* 隱藏超出x軸頁面的內容 */
-    font-family: "微軟正黑體","Arial";
+    /* 隱藏超出x軸頁面的內容 */
+    overflow-x:hidden;
+    font-family: "微軟正黑體","Arial", 'Times New Roman' , serif;
     /* -webkit-overflow-scrolling: touch; */
 }
 html{
@@ -17,6 +18,8 @@ body {
 .container{
     position: relative;
 }
+
+/* ======漢堡條====== */
 .hbg{
     position: fixed;
     top: 68px;
@@ -56,39 +59,40 @@ body {
     cursor: pointer;
     color: #fff;
 }
-.community {
+/* ======漢堡條====== */
+
+.header_title {
+    font-size: 30px;
     height: 72px;
     background-color: #2a2a2a;
     color: #e2e2e2;
     line-height: 72px;
 }
 .title {
-    font-family: 'Arial', 'Times New Roman' , serif;
-    font-size: 30px;
-}
-.subtitle {
-    font-family: 'Arial', 'Times New Roman' , serif;
     font-size: 24px;
     font-weight: bold;
     color: #333;
 }
 .main{
-    margin-bottom: 110px;
+    margin-bottom: 120px;
 }
 @media screen and (max-width:768px){
     .main{
         margin-bottom: 50px;
     }
 }
+
+/* ======作品圖====== */
 .portfolio {
     background-color: #e2e2e2;
     border: 1px solid;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
 }
 .portfolio:hover {
-    opacity: .8;
     cursor: pointer;
 }
+/* ======作品圖====== */
+
 .footer {
     height: 72px;
     background-color: #2a2a2a;
